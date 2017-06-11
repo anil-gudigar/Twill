@@ -1,0 +1,56 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+ext {
+    configuration = [
+            package             : "com.twilllnews.app",
+            buildToolsVersion   : "25.0.2",
+            compileVersion      : 25,
+            minSdk              : 21,
+            targetSdk           : 25,
+            version_code        : 1,
+            version_name        : "1.0",
+    ]
+    libraries = [
+            supportVersion      : "25.3.1",
+            dagger              : "2.10",
+            google_dagger       : "2.11-rc2",
+            rxjava              : "2.0.1",
+            rxandroid           : "2.0.1",
+            retrofit            : "2.1.0",
+            retrofit_adapter    : "2.2.0",
+            butterknife         : "8.5.1",
+            javax_annotation    : "1.0",
+            glide               : "3.7.0",
+            okhttp              : "3.4.1",
+            gson                : "2.8.0",
+            activeandroid       : "3.1.0-SNAPSHOT"
+    ]
+    testingLibraries = [
+            junit               : "4.12",
+            mockito             : "2.0.31-beta",
+            espresso            : "2.2.2",
+            espressoRunner      : "0.4.1",
+            espressoRules       : "0.4.1"
+    ]
+}
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.0-alpha3'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+allprojects {
+    repositories {
+        jcenter()
+        maven { url 'https://maven.google.com' }
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
