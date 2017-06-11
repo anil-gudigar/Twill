@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Twill</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="shared_image">sharedimage</string>
+    <string name="article_shared_image">articlesharedimage</string>
+    <string name="title_activity_graphy">GraphyActivity</string>
+    <string name="title_activity_news_details">NewsDetailsActivity</string>
+    <string name="author">By %s</string>
+    <string name="title_activity_news_story">NewsStoryActivity</string>
+    <string name="action_settings">Settings</string>
+</resources>

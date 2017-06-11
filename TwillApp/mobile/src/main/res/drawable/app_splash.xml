@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="@color/colorPrimary"
+                android:centerColor="#ff42959a"
+                android:endColor="@color/colorPrimaryDark"
+                android:angle="135"/>
+
+            <corners
+                android:radius="0dp"/>
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/web_hi_res_512"
+        android:width="120dp"
+        android:height="120dp"
+        android:gravity="center"
+        android:bottom="20dp"
+        android:left="20dp"
+        android:right="20dp"
+        android:top="20dp"/>
+    <item
+        android:drawable="@drawable/poweredby"
+        android:width="188dp"
+        android:height="18dp"
+        android:gravity="bottom|center_horizontal"
+        android:bottom="20dp"
+        android:left="20dp"
+        android:right="20dp"
+        android:top="20dp"/>
+</layer-list>
