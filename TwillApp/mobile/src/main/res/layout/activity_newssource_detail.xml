@@ -6,10 +6,10 @@
 
         <variable
             name="sources"
-            type="com.twilllnews.data.local.entity.Sources" />
+            type="com.twill.news.data.local.entity.Sources" />
         <variable
             name="resource"
-            type="com.twilllnews.data.remote.Resource" />
+            type="com.twill.news.data.remote.Resource" />
     </data>
 
 

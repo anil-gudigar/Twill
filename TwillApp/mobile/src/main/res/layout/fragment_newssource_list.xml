@@ -6,7 +6,7 @@
 
         <variable
             name="resource"
-            type="com.twilllnews.data.remote.Resource" />
+            type="com.twill.news.data.remote.Resource" />
     </data>
 
     <LinearLayout

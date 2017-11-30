@@ -6,7 +6,7 @@
 
         <variable
             name="sources"
-            type="com.twilllnews.data.local.entity.Sources" />
+            type="com.twill.news.data.local.entity.Sources" />
     </data>
 
     <LinearLayout
