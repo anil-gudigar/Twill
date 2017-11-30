@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.app.Application;
 
 
-import com.twill.dagger.DaggerAppComponent;
+import com.twill.news.dagger.DaggerAppComponent;
 
 import javax.inject.Inject;
 
