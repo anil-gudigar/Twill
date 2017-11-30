@@ -23,7 +23,7 @@ public class RequestInterceptor implements Interceptor {
         HttpUrl originalHttpUrl = originalRequest.url();
 
         HttpUrl url = originalHttpUrl.newBuilder()
-                .addQueryParameter("api_key", AppConstants.API_CONSTANTS.NEWS_API_KEY)
+                .addQueryParameter("apiKey", AppConstants.API_CONSTANTS.NEWS_API_KEY)
                 .build();
 
         Request request = originalRequest.newBuilder().url(url).build();

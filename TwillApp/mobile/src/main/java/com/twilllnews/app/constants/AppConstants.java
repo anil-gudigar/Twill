@@ -88,8 +88,8 @@ public class AppConstants {
         public static final String NEWS_API_KEY = "9d9d719c8a534afba2bf4c054ee87fb4";
         public static final String GRAPHY_API_KEY = "dc6zaTOxFJmzC";
         public static final String CONTENT_TYPE_APPLICATION_JSON = "Content-Type: application/json;";
-        public static final String REQUEST_NEWS_SOURCES = "/v1/sources/";
-        public static final String REQUEST_NEWS_ARTICLES = "/v1/articles/";
+        public static final String REQUEST_NEWS_SOURCES = "/v1/sources";
+        public static final String REQUEST_NEWS_ARTICLES = "/v1/articles";
         public static final int TIMEOUT_IN_SEC = 15;
     }
 }

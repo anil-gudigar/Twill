@@ -2,7 +2,7 @@
   "formatVersion": 1,
   "database": {
     "version": 2,
-    "identityHash": "ec91cbb867f817215c15b67cd656d304",
+    "identityHash": "df5e3c1fa88684d0a72222a597cf2094",
     "entities": [
       {
         "tableName": "Sources",
@@ -82,7 +82,7 @@
             "columnNames": [
               "id"
             ],
-            "createSql": "CREATE  INDEX `index_Sources_id`\nON `${TABLE_NAME}` (`id`)"
+            "createSql": "CREATE  INDEX `index_Sources_id` ON `${TABLE_NAME}` (`id`)"
           },
           {
             "name": "index_Sources_category",
@@ -90,7 +90,7 @@
             "columnNames": [
               "category"
             ],
-            "createSql": "CREATE  INDEX `index_Sources_category`\nON `${TABLE_NAME}` (`category`)"
+            "createSql": "CREATE  INDEX `index_Sources_category` ON `${TABLE_NAME}` (`category`)"
           }
         ],
         "foreignKeys": []
@@ -137,7 +137,7 @@
     ],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"ec91cbb867f817215c15b67cd656d304\")"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"df5e3c1fa88684d0a72222a597cf2094\")"
     ]
   }
 }
