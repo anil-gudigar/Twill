@@ -1,13 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">Twill</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
-    <string name="shared_image">sharedimage</string>
-    <string name="article_shared_image">articlesharedimage</string>
-    <string name="title_activity_graphy">GraphyActivity</string>
-    <string name="title_activity_news_details">NewsDetailsActivity</string>
-    <string name="author">By %s</string>
-    <string name="title_activity_news_story">NewsStoryActivity</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name" translatable="false">Twill</string>
+    <string name="title_home" translatable="false">Home</string>
+    <string name="title_dashboard" translatable="false">Dashboard</string>
+    <string name="title_notifications" translatable="false">Notifications</string>
+    <string name="shared_image" translatable="false">sharedimage</string>
+    <string name="article_shared_image" translatable="false">articlesharedimage</string>
+    <string name="title_activity_graphy" translatable="false">GraphyActivity</string>
+    <string name="title_activity_news_details" translatable="false">NewsDetailsActivity</string>
+    <string name="author" translatable="false">By %s</string>
+    <string name="title_activity_news_story" translatable="false">NewsStoryActivity</string>
+    <string name="action_settings" translatable="false">Settings</string>
 </resources>
