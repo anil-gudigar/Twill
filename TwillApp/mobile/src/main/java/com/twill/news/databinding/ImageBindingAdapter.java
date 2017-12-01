@@ -18,7 +18,7 @@ public final class ImageBindingAdapter {
         if (url != null && !url.equals(""))
            Glide.with(view.getContext())
                     .load(url)
-                    .placeholder(R.drawable.place_holder)
+                    .placeholder(R.drawable.place_holder_bg)
                     .into(view);
     }
 

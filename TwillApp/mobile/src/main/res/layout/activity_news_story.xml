@@ -79,14 +79,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:layout_margin="5dp"
+                        android:layout_margin="@dimen/text_margin"
                         android:text="@{@string/author(article.author)}"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
-                        android:layout_margin="5dp"
+                        android:layout_margin="@dimen/text_margin"
                         android:text="@{article.getpublishedDateFormatted()}" />
                 </RelativeLayout>
 

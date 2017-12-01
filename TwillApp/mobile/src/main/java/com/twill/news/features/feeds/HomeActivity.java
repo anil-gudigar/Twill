@@ -8,6 +8,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.twill.news.R;
 import com.twill.news.databinding.ActivityHomeBinding;
@@ -125,6 +126,7 @@ public class HomeActivity extends AppCompatActivity implements HasSupportFragmen
         AndroidInjection.inject(this);
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_home);
+        binding.navigation.setVisibility(View.GONE);
         binding.navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         setSupportActionBar(binding.toolbar);
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();

@@ -20,7 +20,7 @@
         <ImageView
             android:id="@+id/imageViewCover"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="250dp"
             android:scaleType="fitXY"
             android:transitionName="@string/article_shared_image"
             app:url="@{article.urlToImage}" />
@@ -50,7 +50,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:gravity="bottom"
                 android:text="@{@string/author(article.author)}"
                 android:textColor="@color/colorAccent"
