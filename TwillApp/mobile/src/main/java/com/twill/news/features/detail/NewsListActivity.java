@@ -66,6 +66,8 @@ public class NewsListActivity extends AppCompatActivity implements LifecycleRegi
         binding.recyclerView.setAdapter(new NewsArticleListAdapter(this));
     }
 
+
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
