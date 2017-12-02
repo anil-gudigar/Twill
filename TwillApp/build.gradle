@@ -1,7 +1,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 ext {
     configuration = [
-            package             : "com.twilllnews.app",
+            package             : "com.twill.news",
             buildToolsVersion   : "25.0.2",
             compileVersion      : 26,
             minSdk              : 21,
