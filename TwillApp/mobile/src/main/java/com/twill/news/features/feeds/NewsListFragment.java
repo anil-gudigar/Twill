@@ -50,7 +50,7 @@ public class NewsListFragment extends LifecycleFragment implements NewsListCallb
         binding = FragmentNewssourceListBinding.inflate(inflater, container, false);
         binding.recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 3));
         binding.recyclerView.setAdapter(new NewsListAdapter(this));
-        binding.recyclerView.addOnScrollListener(new HideShowScrollListener() {
+       /* binding.recyclerView.addOnScrollListener(new HideShowScrollListener() {
             @Override
             public void onHide() {
 
@@ -76,7 +76,7 @@ public class NewsListFragment extends LifecycleFragment implements NewsListCallb
             public void onScrolled() {
                 // To load more data
             }
-        });
+        });*/
         return binding.getRoot();
     }
 

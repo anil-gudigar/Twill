@@ -3,6 +3,14 @@ def cfg = rootProject.ext.configuration
 def libs = rootProject.ext.libraries;
 def test = rootProject.ext.testingLibraries;
 android {
+    signingConfigs {
+        config {
+            keyAlias 'twill'
+            keyPassword 'twill@1234'
+            storeFile file('C:/Users/ankumar/Documents/Android Architucture/Twill/TwillApp/twill_signature.jks')
+            storePassword 'twill@1234'
+        }
+    }
     compileSdkVersion cfg.compileVersion
     buildToolsVersion cfg.buildToolsVersion
     defaultConfig {
@@ -26,13 +34,12 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
     }
-
     packagingOptions {
         exclude 'META-INF/rxjava.properties'
     }
-
     dataBinding {
         enabled = true
     }
@@ -46,23 +53,22 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-
     buildToolsVersion '26.0.2'
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.google.android.gms:play-services-wearable:10.2.6'
-    compile "android.arch.lifecycle:runtime:1.0.0-alpha1"
-    compile "android.arch.lifecycle:extensions:1.0.0-alpha1"
+    compile 'android.arch.lifecycle:runtime:1.0.0-alpha1'
+    compile 'android.arch.lifecycle:extensions:1.0.0-alpha1'
     annotationProcessor "android.arch.lifecycle:compiler:1.0.0-alpha1"
-    compile "android.arch.persistence.room:runtime:1.0.0-alpha1"
+    compile 'android.arch.persistence.room:runtime:1.0.0-alpha1'
     annotationProcessor "android.arch.persistence.room:compiler:1.0.0-alpha1"
-    testCompile "android.arch.persistence.room:testing:1.0.0-alpha1"
-    compile "android.arch.persistence.room:rxjava2:1.0.0-alpha1"
+    testCompile 'android.arch.persistence.room:testing:1.0.0-alpha1'
+    compile 'android.arch.persistence.room:rxjava2:1.0.0-alpha1'
 
     // Android
     compile "com.android.support:support-v4:${libs.supportVersion}"
@@ -71,11 +77,13 @@ dependencies {
     compile "com.android.support:cardview-v7:${libs.supportVersion}"
     compile "com.android.support:recyclerview-v7:${libs.supportVersion}"
     compile "com.android.support:palette-v7:${libs.supportVersion}"
+
     //okhttp
     compile "com.squareup.okhttp3:okhttp:${libs.okhttp}"
     compile "com.squareup.okhttp3:logging-interceptor:${libs.okhttp}"
     compile "com.squareup.okhttp3:okhttp-urlconnection:${libs.okhttp}"
     compile "com.google.code.gson:gson:${libs.gson}"
+
     //retrofit
     compile "com.squareup.retrofit2:retrofit:${libs.retrofit}"
     compile "com.squareup.retrofit2:adapter-rxjava:${libs.retrofit}"
@@ -95,10 +103,10 @@ dependencies {
     //butterknife
     compile "com.jakewharton:butterknife:${libs.butterknife}"
     annotationProcessor "com.jakewharton:butterknife-compiler:${libs.butterknife}"
+
     //reactivex
     compile "io.reactivex.rxjava2:rxandroid:${libs.rxandroid}"
     compile "io.reactivex.rxjava2:rxjava:${libs.rxjava}"
-
     compile "com.github.bumptech.glide:glide:${libs.glide}"
     compile "com.michaelpardo:activeandroid:${libs.activeandroid}"
     compile "org.mockito:mockito-core:${test.mockito}"
@@ -120,9 +128,9 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+
     //test
     testCompile "junit:junit:$test.junit"
-
     androidTestCompile 'com.android.support.test.espresso:espresso-contrib:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
         exclude group: 'com.android.support', module: 'support-v4'
